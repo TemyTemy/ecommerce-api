@@ -32,5 +32,14 @@ router.post('/', (req, res) => {
   }).then((tag) =>res.json(tag.id));
 });
 
+router.put('/:id', (req, res) => {
+  // update a tag's name by its `id` value
+  Tag.update({tag_name: req.body.tag_name}, {
+    where: {id: req.params.id},
+    returning: true,
+    plain: true
+  }).then(() => res.json(okMessage));
+});
+
 
 module.exports = router;
