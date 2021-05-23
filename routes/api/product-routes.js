@@ -11,6 +11,15 @@ const okMessage = {
   message: "ok"
 };
 
+// The `/api/products` endpoint
+
+// get all products
+router.get('/', (req, res) => {
+    // find all products
+    // be sure to include its associated Category and Tag data
+    Product.findAll({include:[{model: Tag, as: 'tags'}, {model: Category, as: 'category'}]}).then((products) => res.json(products));
+});
+
 // get one product
 router.get('/:id', (req, res) => {
     // find a single product by its `id`
