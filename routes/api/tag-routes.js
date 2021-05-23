@@ -19,5 +19,12 @@ router.get('/', (req, res) => {
     Tag.findAll({include:[{model: Product, as: 'tag_products'}]}).then((products) => res.json(products));
 });
 
+router.get('/:id', (req, res) => {
+  // find a single tag by its `id`
+  // be sure to include its associated Product data
+  findTag(req.params.id).then((tag) => res.json(tag));
+});
+  
+
 
 module.exports = router;
