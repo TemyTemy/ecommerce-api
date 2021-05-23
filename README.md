@@ -16,14 +16,14 @@ A backend app for an ecommerce website.
 
 
 ## User Journey
- ![alt text](https://github.com/TemyTemy/employee-tracker/blob/main/Assets/Employee%20Tracker%20Recorder.gif)
+ ![alt text](https://github.com/TemyTemy/ecommerce-api/blob/main/assets/EcommerceBackendWeek13.gif)
 
 
 
 ## Links on Github
 
 - The source code repository is available at this link: https://github.com/TemyTemy/ecommerce-api
-- The video link for a demo showing all application functionalities is available at: https://drive.google.com/file/d/1FnaojCgtVOGhlEKIibRF9IcoLsp-ejQo/view
+- The video link for a demo showing all application functionalities is available at: https://drive.google.com/file/d/1KADeSVarx1o8-JB6vxDYlDebHLyax9Ny/view
 
 ## License
 MIT
